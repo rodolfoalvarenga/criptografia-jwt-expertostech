@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  db:
+    image: mysql
+    container_name: springbootsecurityexpertostech_mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3309:3309"
+    volumes:
+      - expertos_tech_data:/var/lib/mysql
+
+volumes:
+  expertos_tech_data:
